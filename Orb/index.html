@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orb Demo</title>
+  <!-- Importamos el CSS -->
+  <link rel="stylesheet" href="./orb.css" />
+  <style>
+    /* Asegúrate de que html y body llenen el 100% para que el canvas también ocupe todo el espacio disponible */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    #orb-root {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor donde se montará la animación -->
+  <div id="orb-root" class="orb-container"></div>
+
+  <!-- Importamos orb.js como módulo ES -->
+  <script type="module" src="./orb.js"></script>
+</body>
+</html>
